@@ -49,3 +49,20 @@ html {
 .MuiChip-icon {
   color: black !important;
 }
+
+/* width */
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 30%;
+  background-color: #888;
+}

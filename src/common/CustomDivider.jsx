@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Typography, Chip, Divider, Slide } from '@mui/material'
+import { Typography, Chip, Divider, Slide, useMediaQuery, useTheme } from '@mui/material'
 const CustomDivider = ({ label, icon, align, ...props }) => {
+const theme = useTheme()
+const isXs = useMediaQuery(theme.breakpoints.down("sm")) 
   const [loading, setLoading] = useState(false)
   useEffect(() => {
     setLoading(true)
@@ -28,7 +30,7 @@ const CustomDivider = ({ label, icon, align, ...props }) => {
       >
         <Chip
           icon={icon}
-          sx={{ backgroundColor: 'custom.main', p: 3 }}
+          sx={{ backgroundColor: 'custom.main', p: {xs:0,sm:3} }}
           label={
             <Typography
               variant="body1"

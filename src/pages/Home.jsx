@@ -1,5 +1,5 @@
 import { useEffect, useRef, useCallback, useState } from 'react'
-import { Typography, Box } from '@mui/material'
+import { Typography, Box, useTheme, useMediaQuery } from '@mui/material'
 import { loadFull } from 'tsparticles'
 import { Helmet } from 'react-helmet-async'
 import TextTransition, { presets } from 'react-text-transition'
@@ -12,6 +12,8 @@ import bg01 from '../assets/backgrounds/bg01.jpeg'
 
 const Home = ({ title }) => {
   const [index, setIndex] = useState(0)
+  const theme = useTheme()
+  const isSmUp = useMediaQuery(theme.breakpoints.up("sm"))
 
   const nameEl = useRef(null)
 
@@ -53,7 +55,7 @@ const Home = ({ title }) => {
       />
 
       <Typography
-        variant="h3"
+      variant = {isSmUp? "h3" :"h5"}
         ref={nameEl}
         sx={{
           color: 'whitesmoke',
@@ -63,7 +65,8 @@ const Home = ({ title }) => {
       <Box component="div" sx={{ display: 'flex' }}>
         <TextTransition springConfig={presets.wobbly}>
           <Typography
-            variant="h4"
+               variant = {isSmUp?"h4" :"h6"}
+
             sx={{
               mt: 4,
               color: 'whitesmoke',
@@ -75,7 +78,8 @@ const Home = ({ title }) => {
           </Typography>
         </TextTransition>
         <Typography
-          variant="h4"
+                     variant = {isSmUp?"h4" :"h6"}
+
           sx={{
             mt: 4,
             mr: 1,

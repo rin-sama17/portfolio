@@ -1,5 +1,7 @@
-import { Box } from '@mui/material'
+import { Box, useMediaQuery, useTheme } from '@mui/material'
 const PageContiner = ({ children, bgPicture }) => {
+   const theme = useTheme()
+   const isXs = useMediaQuery(theme.breakpoints.down("sm"))
   return (
     <Box
       sx={{
@@ -13,7 +15,7 @@ const PageContiner = ({ children, bgPicture }) => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        p: 3,
+        p: isXs?0:3,
       }}
     >
       {children}

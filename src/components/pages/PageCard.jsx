@@ -1,8 +1,8 @@
 import { useTheme } from '@mui/material/styles'
-import { Card } from '@mui/material'
+import { Card, useMediaQuery } from '@mui/material'
 const PageCard = ({ children, width }) => {
   const theme = useTheme()
-
+const isXs = useMediaQuery(theme.breakpoints.down("sm"))
   return (
     <Card
       sx={{
@@ -11,7 +11,7 @@ const PageCard = ({ children, width }) => {
             ? 'rgba(0, 0, 0, 0.8)'
             : 'rgba(255, 255, 255, 0.8)',
         overflowY: 'scroll',
-        width: { width },
+        width: isXs ? 1 : width,
       }}
     >
       {children}

@@ -1,1 +1,2 @@
-you can see output in https://rin-sama17.github.io/portfolio/
+برای دیدن سایت به لینک زیر مراجعه شود
+https://portfolio-rin-sama.vercel.app/

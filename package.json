@@ -33,7 +33,6 @@
     "yup": "0.32.11"
   },
   "scripts": {
-    "predeploy": "vite build",
     "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",

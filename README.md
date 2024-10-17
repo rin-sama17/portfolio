@@ -1,1 +1,4 @@
-you can see output in https://rin-sama17.github.io/portfolio/
+برای دیدن سایت به لینک زیر مراجعه کنید 
+https://portfolio-rin-sama.vercel.app/
+
+حسین سرخوش هستم از تهران با ۳ سال سابقه برنامه نویسی در حوضه فرانت اند 

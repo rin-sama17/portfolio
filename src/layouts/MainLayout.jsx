@@ -22,7 +22,7 @@ const MainLayout = ({ children, mode }) => {
           <Helmet>
             <title>وبسایت شخصی</title>
           </Helmet>
-          <Grid container sx={{ height: '100vh' }}>
+          <Grid container sx={{ height: '100vh', height:"100svh" }}>
             {children}
           </Grid>
         </HelmetProvider>

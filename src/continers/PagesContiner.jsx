@@ -10,6 +10,7 @@ const PagesContiner = ({ children }) => {
       sx={{
         backgroundColor: 'whitesmoke',
         height: '100vh',
+        height: '100svh',
       }}
     >
       {children}

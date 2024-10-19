@@ -3,32 +3,32 @@ import { HtmlIcon, CssIcon, JsIcon, ReactIcon, GitIcon } from "../assets/icons";
 export const devSkills = {
     htmlSkill: {
         id: 0,
-        name: "HTML",
+        name: "react",
         icon: HtmlIcon,
-        color: "primary",
+        color: "primary.dark",
     },
     cssSkill: {
         id: 1,
-        name: "CSS",
+        name: "vue",
         icon: CssIcon,
-        color: "info",
+        color: "success.dark",
     },
     jsSkill: {
         id: 2,
-        name: "JavaScript",
+        name: "nextjs",
         icon: JsIcon,
-        color: "warning",
+        color: "info.light",
     },
     reactSkill: {
         id: 3,
-        name: "React",
+        name: "linux",
         icon: ReactIcon,
-        color: "info",
+        color: "secondary.dark",
     },
     gitSkill: {
         id: 5,
         name: "Git",
         icon: GitIcon,
-        color: "secondary",
+        color: "secondary.main",
     },
 };

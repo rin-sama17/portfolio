@@ -12,7 +12,11 @@ const Page = (props) => {
       {...others}
     >
       {pageNumber === index && (
-        <Box sx={{ height: '100vh', overflow: 'hidden' }}>{children}</Box>
+        <Box sx={{
+          height: '100vh',
+          height: '100svh',
+           overflow: 'hidden' 
+          }}>{children}</Box>
       )}
     </div>
   )

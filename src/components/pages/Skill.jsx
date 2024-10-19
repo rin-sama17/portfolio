@@ -1,15 +1,15 @@
 import { Box, Typography, LinearProgress } from '@mui/material'
 import CustomDivider from '../../common/CustomDivider'
 
-const Skill = ({ name, color, value, icon }) => {
+const Skill = ({ name, bgcolor, value, icon }) => {
   return (
     <>
       <CustomDivider
         icon={<Box component="img" src={icon} sx={{ height: 30 }} />}
         label={name}
-        color={color}
+       
         align="right"
-        sx={{ color: '#000', p: 3 }}
+        sx={{ color: '#000',p: {xs:2} ,backgroundColor:bgcolor}}
       />
       <Box
         sx={{
@@ -32,10 +32,12 @@ const Skill = ({ name, color, value, icon }) => {
           <LinearProgress
             variant="determinate"
             value={value}
-            color={color}
             sx={{
               height: 10,
               borderRadius: 2,
+              ".muirtl-1qrcf79-MuiLinearProgress-bar1 ":{
+                backgroundColor:bgcolor
+              }
             }}
           />
         </Box>

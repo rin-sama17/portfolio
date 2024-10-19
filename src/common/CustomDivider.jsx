@@ -30,7 +30,7 @@ const isXs = useMediaQuery(theme.breakpoints.down("sm"))
       >
         <Chip
           icon={icon}
-          sx={{ backgroundColor: 'custom.main', p: {xs:0,sm:3} }}
+          sx={{ backgroundColor: 'custom.main', p: {xs:1,sm:3} }}
           label={
             <Typography
               variant="body1"

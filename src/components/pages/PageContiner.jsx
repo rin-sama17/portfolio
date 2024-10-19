@@ -11,6 +11,7 @@ const PageContiner = ({ children, bgPicture }) => {
         backgroundSize: 'cover',
         overflow: 'hidden',
         height: '100vh',
+        height: '100svh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

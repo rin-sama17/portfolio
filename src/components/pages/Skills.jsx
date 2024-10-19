@@ -27,34 +27,35 @@ const Skills = () => {
   }, [])
   return (
     <>
+    
       <Skill
         name={jsSkill.name}
-        color={jsSkill.color}
-        icon={jsSkill.icon}
+        bgcolor={jsSkill.color}
+       // icon={jsSkill.icon}
         value={js}
       />
       <Skill
         name={htmlSkill.name}
-        color={htmlSkill.color}
-        icon={htmlSkill.icon}
+        bgcolor={htmlSkill.color}
+       // icon={htmlSkill.icon}
         value={html}
       />
       <Skill
         name={cssSkill.name}
-        color={cssSkill.color}
-        icon={cssSkill.icon}
+        bgcolor={cssSkill.color}
+       // icon={cssSkill.icon}
         value={css}
       />
       <Skill
         name={reactSkill.name}
-        color={reactSkill.color}
-        icon={reactSkill.icon}
+        bgcolor={reactSkill.color}
+       // icon={reactSkill.icon}
         value={react}
       />
       <Skill
         name={gitSkill.name}
-        color={gitSkill.color}
-        icon={gitSkill.icon}
+        bgcolor={gitSkill.color}
+       // icon={gitSkill.icon}
         value={git}
       />
       ;
